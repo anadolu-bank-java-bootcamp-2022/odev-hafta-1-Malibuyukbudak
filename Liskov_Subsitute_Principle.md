@@ -53,7 +53,7 @@ Lenovo' in dikkat edilirse kliması olmadığı için null geçilmiş ancak iler
             {
                 Computer computer = new Asus();
                 computer.Run();
-                computer.OpenAirConditioning();
+                computer.OpenCdRom();
                 // Sıkıntı yok her şey yolunda.
 
                 Computer computer1 = new Lenovo();
@@ -69,12 +69,12 @@ using System;
 
     namespace LiskovSubstitutionPrinciple
     {
-        public interface IAirConditionable
+        public interface IOpenCdRom
         {
             string OpenCdRom();
         }
 
-        public abstract class Car
+        public abstract class Computer
         {
             public string Run()
             {
@@ -82,7 +82,7 @@ using System;
             }
         }
 
-        public class Ferrari : Car, IAirConditionable
+        public class Asus : Computer, IOpenCdRom
         {
             public string OpenCdRom()
             {
@@ -90,7 +90,7 @@ using System;
             }
         }
 
-        public class Murat131 : Car
+        public class Lenovo : Computer
         {
             public override string Run()
             {
