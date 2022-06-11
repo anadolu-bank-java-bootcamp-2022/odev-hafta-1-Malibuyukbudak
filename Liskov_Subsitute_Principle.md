@@ -60,7 +60,7 @@ Lenovo' in dikkat edilirse kliması olmadığı için null geçilmiş ancak iler
                 computer1.Run();
                 computer1.OpenCdRom(); // ?
             }
-Liskov'a göre alt sınıflardan oluşan nesnelerin üst sınıfın nesneleri ile yer değiştirdikleri zaman, aynı davranışı sergilemesini beklemektir. Bu durumda murat131 bu davranışı göstermiyor.
+Liskov'a göre alt sınıflardan oluşan nesnelerin üst sınıfın nesneleri ile yer değiştirdikleri zaman, aynı davranışı sergilemesini beklemektir. Bu durumda 'lenovo' bu davranışı göstermiyor.
 
 
 Alttaki gibi refactor edebiliriz.
